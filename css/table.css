@@ -1,0 +1,17 @@
+.table{
+    color: brown;
+    
+    width: 94%;
+    margin-left: 60px;
+}
+.table__Cell{
+   
+    text-align: left;
+    padding: 10px;
+   
+    max-width: 80px;
+}
+.table__Cell--result{
+    margin-left: 20px;
+   color:rgb(45, 8, 133)
+}

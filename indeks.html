@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency-converter</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
+        <link href="css/table.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <script defer src="js/script.js"></script>
+
+    </head>
+    <body class="body">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <Legend class="form__legend">Przelicznik walut</Legend>
+
+                <label class="form__label"> <span>Wybierz walutę do wymiany</span>
+                    <select class="form__field js-currencySelection"
+                        name="currency">
+                        <option value="PLN">Złotówka</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">Funt Brytyjski</option>
+                        <option value="USD">Dolar amerykański</option>
+                    </select>
+                </label>
+<label class="form__label">
+    <span> Podaj kwotę do przeliczenia
+        <input class="form__field form__field--input js-amount" required type="number"
+        min="0.01" step="any" name="PLN" value="1"
+        placeholder="Wpisz kwotę"> </span>
+</label>
+                    
+
+
+                </label>
+
+
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+
+
+                <button class="form__button">Pokaż wartość w innych walutach</button>
+                <table class="table">
+                    <tr>
+                        <th class="table__Cell" scope="col">Kwota Złotówka
+                        </th>
+                        <td class="table__Cell" scope="col"><strong
+                                class="table__Cell--result js-resultPLN">N/A</strong>
+                            PLN</td>
+                    </tr>
+                    <tr>
+                        <th class="table__Cell" scope="col">Kwota Euro </th>
+                        <td class="table__Cell" scope="col"><strong
+                                class="table__Cell--result js-resultEUR">N/A</strong>
+                            EUR</td>
+                    </tr>
+                    <tr>
+                        <th class="table__Cell" scope="col">Kwota funt
+                            brytyjski</th>
+                        <td class="table__Cell" scope="col"><strong
+                                class="table__Cell--result js-resultGBP">N/A</strong>
+                            GBP</td>
+                    </tr>
+                    <tr>
+                        <th class="table__Cell" scope="col">Kwota dolar
+                            amerykański </th>
+                        <td class="table__Cell" scope="col"><strong
+                                class="table__Cell--result js-resultUSD">N/A</strong>
+                            USD</td>
+                    </tr>
+
+
+
+
+                </table>
+
+
+            </fieldset>
+
+
+
+        </form>
+
+        <footer class="footer">Kurs walut wg <a rel="noreferrer noopener"
+                target="_blank"
+                href="https://www.money.pl/pieniadze/nbp/srednie/"> money.pl
+            </a> z dnia 10.01.2023 </footer>
+    </body>
+</html>

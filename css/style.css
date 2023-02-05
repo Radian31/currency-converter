@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+let resultPLN;
+
+  switch (currencySelection) {
+    case "PLN":
+      resultPLN = amount * 1;
+      break;
+    case "EUR":
+      resultPLN = amount / PLNtoEUR;
+      break;
+    case "GBP":
+      resultPLN = amount / PLNtoGBP;
+      break;
+    case "USD":
+      resultPLN = amount / PLNtoUSD;
+      break;
+  }
+
+  resultPLNElement.innerText = resultPLN.toFixed(2);
+
+  let resultEUR;
+
+
+  switch (currencySelection) {
+    case "PLN":
+      resultEUR = amount * PLNtoEUR;
+      break;
+    case "EUR":
+      resultEUR = amount * 1;
+      break;
+    case "GBP":
+      resultEUR = amount * PLNtoEUR / PLNtoGBP;
+      break;
+    case "USD":
+      resultEUR = amount * PLNtoEUR / PLNtoUSD;
+      break;
+  }
+
+  resultEURElement.innerText = resultEUR.toFixed(2);
+
+
+  let resultGBP;
+
+  switch (currencySelection) {
+    case "PLN":
+      resultGBP = amount * PLNtoGBP;
+      break;
+    case "EUR":
+      resultGBP = amount * PLNtoGBP / PLNtoEUR;
+      break;
+    case "GBP":
+      resultGBP = amount * 1;
+      break;
+    case "USD":
+      resultGBP = amount * PLNtoGBP / PLNtoUSD;
+      break;
+  }
+
+  resultGBPElement.innerText = resultGBP.toFixed(2);
+
+  let resultUSD;
+
+  switch (currencySelection) {
+    case "PLN":
+      resultUSD = amount * PLNtoUSD;
+      break;
+    case "EUR":
+      resultUSD = amount * PLNtoUSD / PLNtoEUR;
+      break;
+    case "GBP":
+      resultUSD = amount * PLNtoUSD / PLNtoGBP;
+      break;
+    case "USD":
+      resultUSD = amount * 1;
+      break;
+  }
+
+  resultUSDElement.innerText = resultUSD.toFixed(2);
+
+})

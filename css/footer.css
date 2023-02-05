@@ -1,0 +1,10 @@
+.footer{
+    margin: 20px auto;
+    border-style: hidden;
+    border-radius: 9px;
+    padding: 21px;
+    max-width: 505px;
+    background-color: #73a71a;
+    height: 18px;
+    text-align: center;
+}
