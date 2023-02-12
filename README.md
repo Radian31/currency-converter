@@ -9,6 +9,6 @@ The website is operated by selecting the currency (zloty, Euro, British pound an
 
 I attach a screenshot of the site.
 
-![sreen](image/screen.png)
+![screen](image/screen.png)
 
 
