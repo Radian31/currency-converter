@@ -3,7 +3,7 @@
 
 
 const calculateResult = (amount, currencySelection) => {
- /*  */
+ 
 const PLNtoEUR = 0.2129;
 const PLNtoGBP = 0.1877;
 const PLNtoUSD = 0.2287;
@@ -44,7 +44,7 @@ let resultUSD;
       break;
   }
 }
-updateResultText(resultPLN,resultEUR,resultGBP,resultUSD);
+
 
 const updateResultText =(resultPLN,resultEUR,resultGBP,resultUSD) =>{
   const resultPLNElement = document.querySelector(".js-resultPLN");
@@ -56,6 +56,8 @@ const updateResultText =(resultPLN,resultEUR,resultGBP,resultUSD) =>{
   resultEURElement.innerText = resultEUR.toFixed(2);
   resultGBPElement.innerText = resultGBP.toFixed(2);
   resultUSDElement.innerText = resultUSD.toFixed(2);
+
+  updateResultText(resultPLN,resultEUR,resultGBP,resultUSD);
 }
 
 const onFormSubmit = (event) => {
