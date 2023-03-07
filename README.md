@@ -10,5 +10,5 @@ The website is operated by selecting the currency (zloty, Euro, British pound an
 I attach a screenshot of the site.
 
 ![screen](images/screen.png)
-
+![screen](images/Animation.gif)
 
